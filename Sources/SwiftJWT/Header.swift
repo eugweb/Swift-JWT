@@ -42,6 +42,8 @@ public struct Header: Codable {
     public var jwk: String?
     /// Key ID Header Parameter
     public var kid: String?
+    ///
+    public var id: String?
     /// X.509 URL Header Parameter
     public var x5u: String?
     /// X.509 Certificate Chain Header Parameter
@@ -73,6 +75,7 @@ public struct Header: Codable {
         jku: String? = nil,
         jwk: String? = nil,
         kid: String? = nil,
+        id: String? = nil,
         x5u: String? = nil,
         x5c: [String]? = nil,
         x5t: String? = nil,
@@ -85,6 +88,7 @@ public struct Header: Codable {
         self.jku = jku
         self.jwk = jwk
         self.kid = kid
+        self.id = id
         self.x5u = x5u
         self.x5c = x5c
         self.x5t = x5t
